@@ -1,0 +1,6 @@
+public
+build
+coverage
+.next
+next-env.d.ts
+.vscode
