@@ -41,14 +41,12 @@ next-env.d.ts
 # Optional npm cache directory
 .npm
 
-# Zero-config specific cache
-/.zero-config-cache/
-
-# Yarn Zero-config specific files
-/.yarn/
-
-# Zero-config generated files
-/.zero-config/
+# yarn - zero-config
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
 
 # IDE specific files
 .idea/
