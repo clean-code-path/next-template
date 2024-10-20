@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "server": "npx tsx watch ./src/libs/msw/http.ts"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -17,11 +18,16 @@
     ]
   },
   "dependencies": {
+    "@mswjs/http-middleware": "^0.10.1",
+    "cors": "^2.8.5",
+    "msw": "^2.4.11",
     "next": "14.2.10",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
